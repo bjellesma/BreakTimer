@@ -1,0 +1,10 @@
+## Interface: 100100
+## Title: Break Timer
+## Notes: Remind you to take a break at a specified interval
+## Author: Tastiekakes
+## Version: 3.84
+## DefaultState: enabled
+
+libs\AceConfig-3.0\AceConfig-3.0.xml
+core.lua
+
