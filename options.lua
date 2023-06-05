@@ -54,5 +54,35 @@ AceConfig:RegisterOptionsTable("BreakTimer", {
                 BREAKTIMER_AllSavedVars["cancelText"] = cancelText
             end,
         },
+        alarmHourOption = {
+            type = "range",
+            name = "Alarm Hour",
+            desc = "Set the alarm hour (uses server time)",
+            min = 0,
+            max = 24,
+            step = 1,
+            get = function()
+                return alarmHour
+            end,
+            set = function(_, value)
+                alarmHour = value
+                BREAKTIMER_AllSavedVars["alarmHour"] = alarmHour
+            end,
+        },
+        alarmMinuteOption = {
+            type = "range",
+            name = "Alarm Minute",
+            desc = "Set the alarm minute (uses server time)",
+            min = 0,
+            max = 60,
+            step = 1,
+            get = function()
+                return alarmMinute
+            end,
+            set = function(_, value)
+                alarmMinute = value
+                BREAKTIMER_AllSavedVars["alarmMinute"] = alarmMinute
+            end,
+        },
     },
 })
